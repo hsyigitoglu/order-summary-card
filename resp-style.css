@@ -1,0 +1,36 @@
+@media (max-width:375px){
+    .card{
+        width: 300px; 
+        height: auto;
+    }
+    .card-content .card-text p{
+        font-size: 14px;
+    }
+    .card-content .card-text .card-plan{
+        padding: 10px;
+    }
+    .card-plan .plan-year{
+        flex-direction: row;
+    }
+    .card-content .card-text .card-plan .plan-year p{
+        font-size: 14px;
+    }
+    /* .card-plan a{
+        position: relative;
+        display: block;
+    } */
+}
+@media (max-width:315px){
+    .card-plan{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .card-plan .plan-year{
+        padding: 5px 10px !important;
+    }
+    .card-content .card-text .card-plan a{
+        position: relative;
+        margin-right: 0;
+
+    }
+}

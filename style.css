@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /* font */
+    --main-font:"Red Hat Display";
+    /* colors */
+    --pale-blue: hsl(225,100%,94%);
+    --bright-blue:hsl(245, 75%, 52%);
+    --bright-blue-shadow:rgba(56, 41, 224, 35%);
+    --vpale-blue:hsl(225,100%,98%);
+    --desature-blue:hsl(224,23%,55%);
+    --dark-blue:hsl(223,47%,23%);
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+    font-size: 16px;
+    background: var(--pale-blue) url(images/pattern-background-desktop.svg) no-repeat top;
+    background-size: contain;
+}
+.contain{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card{
+    width: 400px;
+    height: auto;
+    border-radius: 25px;
+}
+picture {
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+picture img{
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.card .card-content{
+    text-align: center;
+}
+.card-content .card-text{
+    padding: 25px;
+}
+.card-content .card-text h4{
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+.card-content .card-text p{
+    color: var(--desature-blue);
+    font-weight: 500;
+}
+.card-content .card-text .card-plan{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--vpale-blue);
+    align-items: center;
+    position: relative;
+}
+.card-content .card-text .card-plan .plan-year{
+    display: flex;
+    flex-direction: column;
+    line-height: .5;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.card-content .card-text .card-plan .plan-year p{
+    padding-left: 10px;
+    font-size: 16px;
+}
+.card-content .card-text .card-plan .plan-year p:first-child{
+    font-weight: 900;
+    color: var(--dark-blue);
+    margin-top: 10px;
+}
+.card-content .card-text .card-plan .plan-year p:last-child{
+    font-weight: 500;
+    color: var(--desature-blue);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.card-content .card-text .card-plan a{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    color: var(--bright-blue);
+    font-size: 14px;
+}
+.card-content .card-btn{
+    display: grid;
+    place-items: center;
+}
+.card-content .card-btn .main-btn{
+    border-radius: 10px;
+    background-color: var(--bright-blue);
+    color:var(--vpale-blue);
+    font-size: 14px;
+    padding: 10px 60px;
+    margin: 10px 0 0;
+    box-shadow: 0 .3rem .4rem .08rem var(--bright-blue-shadow) ;
+}
+.card-content .card-btn .second-btn{
+    color:var(--desature-blue);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 60px;
+    margin: 10px 0 20px;
+}
