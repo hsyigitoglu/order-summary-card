@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root{
     /* font */
@@ -34,15 +35,19 @@ body{
     width: 400px;
     height: auto;
     border-radius: 25px;
+    /* The overflow property hides the image's borders */
+    overflow: hidden;
 }
 picture {
-    border-radius: 25px;
+    /* With overflow, you don't need 'border-radius' anymore here 🙂 */
+    /* border-radius: 25px; */
     margin-bottom: 10px;
 }
 picture img{
     width: 100%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    /* And also here 😄 */
+    /* border-top-left-radius: 25px; */
+    /* border-top-right-radius: 25px; */
 }
 .card .card-content{
     text-align: center;
@@ -97,7 +102,8 @@ picture img{
 }
 .card-content .card-btn{
     display: grid;
-    place-items: center;
+    /* So `.card-btn` will occupy all the width by default */
+    /* place-items: center; */
 }
 .card-content .card-btn .main-btn{
     border-radius: 10px;
